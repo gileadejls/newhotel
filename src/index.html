@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style.css">
+    <title>Meu Site de Hoteis!</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div style="max-width: 2000px;" class="h-16 mx-auto px-3 bg-gray-100 w-full flex items-center justify-between ">
+        <div class="font-semibold text-2xl p-2">
+            LOGO
+        </div>
+        <ul class="hidden  lg:flex lg:gap-10 space-x-4 lg:ml-auto lg:p-2 lg:text-lg lg:text-gray-600" >
+            <li class="hover:text-black"><a href="">Inicio</a></li>
+            <li class="hover:text-black"><a href="">Quem somos</a></li>
+            <li class="hover:text-black"><a href="">Nossos produtos</a></li>
+            <li class="hover:text-black"><a href="">Metas</a></li>
+            <li class="hover:text-black"><a href="">Contato</a></li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>          
+    </div>
+    <!-- /Header -->
+    <!-- Banner -->
+    <div class="h-96 bg-gray-800 flex items-center justify-center flex-col px-3">
+
+        <!-- BANNER TEXT -->
+        <div class="text-center mb-14">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl text-gray-100">Conheça nossos planos</h1>
+            <p class="text-xl sm:text-2xl lg:text-2xl text-gray-100">somos a empresa mais moderna no mercado!</p>
+        </div>
+        <!-- / BANNER TEXT -->
+        <!-- OPTIONS -->
+        <div class="grid grid-cols-2 md:flex md:gap-5 md:items-center font-semibold ">
+            <select id="" class="mr-3 text-sm px-2 py-3 rounded-sm md:h-14  md:px-8 md:mr-0 lg:w-60 lg:text-lg">
+                <option value="">Escolha a cidade</option>
+            </select>
+            <select id="" class="text-sm px-2 py-3 rounded-sm md:h-14 md:px-8 font-semibold lg:w-60 lg:text-lg">
+                <option value="" >Escolha o estado</option>
+            </select>
+            <button class="mt-3 bg-orange-300 px-8 py-3 rounded-sm font-semibold md:h-14 md:mt-0 col-span-3 lg:w-60 lg:text-lg">Encomendar já</button>
+        </div>
+        <!-- /OPTIONS -->
+    </div>
+    <!-- / Banner -->
+    <!-- SERVICES -->
+    <div style="max-width: 2000px; margin: 0 auto;" class="md:grid md: grid-cols-2 md: md:p-14 md:gap-8">
+        <!-- TEXTO DO SERVICES -->
+        <div data-aos="fade-up" data-aos-duration="2000" class="text-center flex flex-col gap-9 mt-16 px-5 md:mt-8">
+            <div >
+                <h2 class="text-xl md:text-2xl mb-2">Reservas Diretas</h2>
+                <p class="text-gray-600">Faça suas reservas sem esforço e com confiança, enquanto desfruta da conveniência de reservar sua estadia no conforto de sua própria casa</p>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl mb-2">Customização</h2>
+                <p class="text-gray-600">Personalize a sua experiência adaptando as personalizações ao seu gosto e crie o ambiente perfeito no seu quarto, tal como o imagina!</p>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl mb-2">Melhores preços</h2>
+                <p class="text-gray-600">Temos imenso orgulho em apresentar a você preços inigualáveis ​​que não apenas lideram o setor, mas também redefinem suas expectativas.</p>
+            </div>
+            <!-- / TEXTO DO SERVICES -->
+        </div>
+        <!-- IMAGEM -->
+        <div style="width: 100%; height: 400px; overflow: hidden;"  class="pt-10 relative lg:relative lg:rounded-md">
+            <div style="background-image: url('./assets/images/photo.jpeg');" class="bg-cover bg-center lg:max-w-7xl lg:hover:scale-105 lg:absolute w-full h-full transition-all rounded-md"></div>
+        </div>
+        <!-- / IMAGEM -->
+    </div>
+
+    <!-- SLIDERS -->
+    <div style="background-color: rgb(248, 248, 248);" class="text-center pt-20 overflow-hidden">
+        <h2 class="lg:text-3xl lg:mb-2 text-2xl px-3 mb-2">Algum texto sobre alguma coisa</h2>
+        <p class="text-xl text-gray-600">descrição de alguma coisa</p>
+
+        <!-- IMAGEM DOS SLIDER -->
+        <div class="flex w-full sm:flex-row flex-col gap-6 justify-center items-center mb-20 mt-20">
+            <div data-aos="fade-right" style="width: 400px; height: 300px; " class="relative overflow-hidden rounded-lg ">
+                <div style="background-image: url('./assets/images/photo2.jpeg');" class="bg-cover w-full h-full lg:hover:scale-110 transition-all z-20"></div>
+            </div>
+            <div data-aos="fade-left"  style="width: 400px; height: 300px; " class="relative overflow-hidden rounded-lg">
+                <div style="background-image: url('./assets/images/photo3.jpeg');" class="bg-cover w-full h-full lg:hover:scale-110 transition-all z-20"></div>
+            </div>
+            <div data-aos="fade-right" style="width: 400px; height: 300px; " class="relative overflow-hidden rounded-lg">
+                <div style="background-image: url('./assets/images/photo4.jpeg');" class="bg-cover w-full h-full lg:hover:scale-110 transition-all absolute z-30"></div>
+            </div>
+        </div>
+         <!-- / IMAGEM DOS SLIDER -->
+    </div>
+    <!-- / SLIDERS -->
+
+    <!-- SECTION -->
+    <div class="bg-neutral-900 pt-20">
+        <div style="max-width: 2000px; margin: 0 auto;" data-aos="fade-up" data-aos-duration="2000">
+            <div  class="text-center">
+                <div class="px-4 md:px-44">
+                    <h2 class="text-2xl mb-5 text-gray-100">Algum texto</h2>
+                    <p class="text-gray-400 mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci provident reiciendis officia dolorem assumenda sit sequi error autem at, ipsam explicabo nesciunt, mollitia cupiditate ad saepe aperiam? Quas, illo?</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full gap-10 md:gap-3 md:flex-row md:px-12 relative overflow-hidden">
+                <div style="height: 400px;" class="md:w-1/2 overflow-hidden">
+                    <div style="background-image: url('./assets/images/quarto.jpeg');" class="w-full h-full bg-cover bg-center rounded-md hover:brightness-50 transition-all">
+                        <div class="absolute text-4xl text-gray-50 opacity-0 hover:opacity-100 hover:flex w-full h-full flex items-center justify-center">
+                            <p class="text-lg px-10 md:px-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est tempora minus commodi repellendus neque unde maxime veritatis cumque modi libero voluptatum, voluptatem nisi. Quia recusandae velit a tempora voluptas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 400px;" class="md:w-1/2 overflow-hidden">
+                    <div style="background-image: url('./assets/images/quarto2.jpeg');" class="w-full h-full bg-cover bg-center rounded-md hover:brightness-50   transition-all">
+                        <div class="absolute text-4xl text-gray-50 opacity-0 hover:opacity-100 hover:flex w-full h-full flex items-center justify-center">
+                            <p class="text-lg px-10 md:px-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est tempora minus commodi repellendus neque unde maxime veritatis cumque modi libero voluptatum, voluptatem nisi. Quia recusandae velit a tempora voluptas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center px-8 pt-14 pb-16 md:px-52">
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis voluptas quod rem. Odio aliquid odit dolores culpa tempora ex a. Impedit eligendi, consequatur molestiae repellat inventore ad veniam perferendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nulla quaerat voluptatem sequi fuga consequuntur veniam? Debitis odio nostrum voluptate, quo error non a impedit consequuntur exercitationem accusantium ut blanditiis.</p>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div  class=" bg-gray-800">
+        <div style="max-width: 2000px; margin: 0 auto;" class="flex items-center p-10 justify-between px-5 md:px-14 text-gray-400 md:text-lg text-sm">
+            <div>
+                <h2 class="">Criado por Gileade</h2>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-2">
+                    <li>Instagram</li>
+                    <li>Linkedin</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
